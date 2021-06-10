@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.hello {
+    text-align: center;
+    background-color: pink;
+}
+.hi{
+    padding-top: 18%;
+    padding-bottom: 15px;
+    color: black;
+    font-size: 45px;
+    
+}
+h6 {
+    padding-bottom: 18%;
+    color: rgb(219, 120, 120);
+}
+.txt {
+    margin-top: -8px;
+}
+
+iframe {
+    border: none;
+    
+}
+.projects1, .projects2{
+    display: flex;
+    margin-top: -8px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+} 
+.projects2{
+    padding-bottom: 80px;
+}
+.project-1 p {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-decoration: none;
+}
+.project-1 a{
+    color: black;
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: lightcoral;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: pink;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.projects1, .projects2 {
+    background-color: pink;
+}
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: pink;
+
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: lightcoral;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: rgb(243, 182, 192);
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: pink;}
+
+.contact {
+    background-color: pink;
+    margin-top: -8px;
+    text-align: center;
+}
+.contact .contact-p{
+    padding-top: 10%;
+    font-size: 25px;
+}
+.contact a {
+    text-decoration: none;
+    margin-bottom:  70px;
+}
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: lightcoral;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .projects1, .projects2 {
+        display: block;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    
+    
+}
