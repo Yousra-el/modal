@@ -25,15 +25,14 @@ iframe {
     border: none;
     
 }
-.projects1, .projects2{
+.projects1 {
     display: flex;
-    margin-top: -8px;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-} 
-.projects2{
+    flex-wrap: wrap;
     padding-bottom: 80px;
+    margin-top: -8px;
 }
+
 .project-1 p {
     text-align: center;
     padding-top: 50px;
@@ -142,12 +141,14 @@ footer {
 
 
 
-@media screen and (max-width: 800px) {
-    .projects1, .projects2 {
+@media screen and (max-width: 830px) {
+    .projects1 {
         display: block;
         text-align: center;
-        flex-wrap: wrap;
     }
-    
+    iframe {
+        width: auto;
+        
+    }
     
 }

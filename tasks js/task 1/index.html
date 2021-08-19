@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* 
+        Primary #0275d8 
+        Success #5cb85c
+        Info #5bc0de
+        Warning #f0ad4e
+        Danger #d9534f
+        Inverse #292b2c
+        Faded #f7f7f7
+    */
+        body {
+            text-align: center;
+            padding-top: 150px;
+        }
+        .text-danger {
+            color: #d9534f;
+        }
+        .text-success {
+            color: #5cb85c;
+        }
+        button {
+            padding: 5px 15px;
+            background-color:#0275d8 ;
+            color:white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0059a7;
+        }
+        .text-warning {
+            color: #f0ad4e;
+        }
+        .text-info {
+            color: #5bc0de;
+        }
+   
+
+    </style>
+</head>
+<body>
+    <h1 class="text-danger">Guess A Number From 1 to 10</h1>
+    <input id="answer" placeholder="Add Your Answer">
+    <p id="warningMsg" class="text-info"></p> <!--Please Add a number to play!-->
+
+
+    <h1 class="text-success">Computer Answer</h1>
+    <input id="computerAnswer" placeholder="Computer Answer" disabled="true">
+
+    <br><br>
+    <button>Play</button>
+    <button>Reset</button>
+    <p id="label" class="text-warning"></p> <!--Your Answer is Wrong! -->
+
+
+
+    <script>
+        // 1- handle input values 
+        // 2 - generate computer answer
+        // 3 - handle play functionality
+        // 4 - handle reset functionality
+        // 1 
+        var userAnswer = document.getElementById("answer")
+        var computerAnswer = document.getElementById("computerAnswer")
+        var warningMsg = document.getElementById("warningMsg")
+        var label = document.getElementById("label")
+        // 2 
+        var computerAnswer = Math.ceil((Math.randon() * 10));
+
+
+    </script>
+</body>
+</html>
